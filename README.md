@@ -1,5 +1,5 @@
 # OFDM_2024
-Este repositorio es para documentar los avances de la simulación de una sistema OFDM. El objetivo es constuir un transmisor OFDM, esta señal modulada pasarla por un canal con ruido gauseano AWGN y desvanecimiento por trayectos multiples Rayleigh y en el extremo reseptor hacer la demodulacion OFDM y la correcta ecualización para contrarestar los efectos del canal. Asi mismo, al sistema se lo someterá a la simulacion Montecarlo para determinar el rendimiento y la BER con diferentes niveles en la relacion señal-ruido SNR.
+Este repositorio es para documentar los avances de la simulación de una sistema OFDM utilizando el software MATLAB. El objetivo es constuir un transmisor OFDM, esta señal modulada pasarla por un canal con ruido gauseano AWGN y desvanecimiento por trayectos multiples Rayleigh y en el extremo reseptor hacer la demodulacion OFDM y la correcta ecualización para contrarestar los efectos del canal. Asi mismo, al sistema se lo someterá a la simulacion Montecarlo para determinar el rendimiento y la BER con diferentes niveles en la relacion señal-ruido SNR.
 
 La idea es ir contruyendo el sistema de apoco:
   1- Se crea un sistema BPSK.
@@ -10,4 +10,3 @@ La idea es ir contruyendo el sistema de apoco:
   6- Simulación Montecarlo.
   7- Se crea el canal Rayleigh como objeto, se introducen portadoras pilotoas en el transmisor y se ecualiza MSE en el recepto.
   8- Simulación Montecarlo.
-  

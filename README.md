@@ -8,5 +8,5 @@ La idea es ir contruyendo el sistema de a poco:
 4. Sobre el sistema BPSK se agrega OFDM con prefijo ciclico.
 5. Se agrega el canal Rayleigh basico y se agrega un ecualizador basico.
 6. Simulación Montecarlo.
-7. Se crea el canal Rayleigh como objeto, se introducen portadoras pilotoas en el transmisor y se ecualiza MSE en el recepto.
+7. Se crea el canal Rayleigh como objeto, se introducen portadoras pilotoas en el transmisor y se ecualiza por dos metodos LS y MSE en el recepto, para luego hacer una comparación entre estos.
 8. Simulación Montecarlo.

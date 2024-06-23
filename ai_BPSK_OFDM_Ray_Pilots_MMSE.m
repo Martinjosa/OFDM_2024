@@ -88,9 +88,9 @@ pulsos_demodulados_ofdm = fft(senal_recibida_ofdm_sin_cp, num_subportadoras); % 
 
 % Estimación del canal usando los pilotos (MMSE)
 % Calcular la matriz de autocorrelación del canal y la matriz de ruido
-rho = exp(-delta_f/ delta_f_c);
-Rhh = rho .^ abs(repmat((1:num_pilotos)', 1, num_pilotos) - repmat(1:num_pilotos, num_pilotos, 1));
-Rnn = (1 / SNR) * eye(num_pilotos);
+rho = exp(-delta_f/ delta_f_c); % Referído a la correlación espacial
+Rhh = rho .^ abs(repmat((1:num_pilotos)', 1, num_pilotos) - repmat(1:num_pilotos, num_pilotos, 1));  % Autocorrelación del canal  
+Rnn = (1 / SNR) * eye(num_pilotos); % Autocorrelación del ruido
 %Rhh = toeplitz(rho.^(0:8-1));
 % Estimación del canal en los índices de los pilotos
 H_est_pilotos = pulsos_demodulados_ofdm(indices_pilotos, :) ./ secuencias_piloto; 
